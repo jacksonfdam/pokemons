@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+	{{title}}
+	{% for user in users %}
+		{% include "user_line.html" %}
+	{% endfor %}
+{% endblock %}
